@@ -1,0 +1,86 @@
+.Inner__Row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  max-width: 1100px;
+  margin: auto;
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .Inner__Row {
+    flex-direction: column;
+  }
+}
+
+.Inner__Reverse {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  max-width: 1100px;
+  margin: auto;
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .Inner__Reverse {
+    flex-direction: column;
+  }
+}
+
+.Pane {
+  width: 50%;
+}
+@media (max-width: 1000px) {
+  .Pane {
+    width: 100%;
+    padding: 0 45px;
+    text-align: center;
+  }
+}
+
+.Title {
+  font-size: 50px;
+  line-height: 1.1;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 600px) {
+  .Title {
+    font-size: 35px;
+  }
+}
+
+.SubTitle {
+  font-size: 26px;
+  font-weight: normal;
+  line-height: normal;
+}
+@media (max-width: 600px) {
+  .SubTitle {
+    font-size: 18px;
+  }
+}
+
+.Image {
+  max-width: 100%;
+  height: auto;
+}
+
+.Item {
+  display: flex;
+  border-bottom: 8px solid #222;
+  padding: 50px 5%;
+  color: white;
+  overflow: hidden;
+}
+
+.Container {
+  /* @media (max-width: 1000px) {
+    ${Item}:last-of-type h2 {
+      margin-bottom: 50px;
+    }
+  } */
+}
