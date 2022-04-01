@@ -1,25 +1,25 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import requests from "../../requests";
-import data from "../data.js";
+import data from "../../Data/movies";
 import "./Banner.css";
 
 function Banner() {
-  const [movie, setMovie] = useState([]);
-  // const movie = data.items[1];
+  // const [movie, setMovie] = useState([]);
+  const movie = data.items[1];
 
-  useEffect(() => {
-    async function fetchData() {
-      const request = await axios.get(requests.top250movies);
-      setMovie(
-        request.data.items[
-          Math.floor(Math.random() * request.data.items.length - 1)
-        ]
-      );
-      return request;
-    }
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   async function fetchData() {
+  //     const request = await axios.get(requests.top250movies);
+  //     setMovie(
+  //       request.data.items[
+  //         Math.floor(Math.random() * request.data.items.length - 1)
+  //       ]
+  //     );
+  //     return request;
+  //   }
+  //   fetchData();
+  // }, []);
 
   return (
     <header

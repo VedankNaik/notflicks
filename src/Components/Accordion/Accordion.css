@@ -1,6 +1,5 @@
 .Accordion__Container {
   display: flex;
-  border-bottom: 8px solid #222;
 }
 
 .Accordion__Frame {
