@@ -3,75 +3,75 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <div className="Container">
-      <p className="Title">Questions? Contact us.</p>
-      <div className="Break" />
-      <div className="Row">
-        <div className="Column">
-          <a className="Link" href="/">
+    <div className="Footer__Container">
+      <p className="Footer__Title">Questions? Contact us.</p>
+      <div className="Footer__Break" />
+      <div className="Footer__Row">
+        <div className="Footer__Column">
+          <a className="Footer__Link" href="/">
             FAQ
           </a>
-          <a className="Link" href="/">
+          <a className="Footer__Link" href="/">
             Investor Relations
           </a>
-          <a className="Link" href="/">
+          <a className="Footer__Link" href="/">
             Ways to Watch
           </a>
-          <a className="Link" href="/">
+          <a className="Footer__Link" href="/">
             Corporate Information
           </a>
-          <a className="Link" href="/">
+          <a className="Footer__Link" href="/">
             Notflicks Originals
           </a>
         </div>
 
-        <div className="Column">
-          <a className="Link" href="/">
+        <div className="Footer__Column">
+          <a className="Footer__Link" href="/">
             Help Centre
           </a>
-          <a className="Link" href="/">
+          <a className="Footer__Link" href="/">
             Jobs
           </a>
-          <a className="Link" href="/">
+          <a className="Footer__Link" href="/">
             Terms of Use
           </a>
-          <a className="Link" href="/">
+          <a className="Footer__Link" href="/">
             Contact Us
           </a>
         </div>
 
-        <div className="Column">
-          <a className="Link" href="/">
+        <div className="Footer__Column">
+          <a className="Footer__Link" href="/">
             Account
           </a>
-          <a className="Link" href="/">
+          <a className="Footer__Link" href="/">
             Redeem gift cards
           </a>
-          <a className="Link" href="/">
+          <a className="Footer__Link" href="/">
             Privacy
           </a>
-          <a className="Link" href="/">
+          <a className="Footer__Link" href="/">
             Speed Test
           </a>
         </div>
 
-        <div className="Column">
-          <a className="Link" href="/">
+        <div className="Footer__Column">
+          <a className="Footer__Link" href="/">
             Media Centre
           </a>
-          <a className="Link" href="/">
+          <a className="Footer__Link" href="/">
             Buy gift cards
           </a>
-          <a className="Link" href="/">
+          <a className="Footer__Link" href="/">
             Cookie Preferences
           </a>
-          <a className="Link" href="/">
+          <a className="Footer__Link" href="/">
             Legal Notices
           </a>
         </div>
       </div>
-      <div className="Break"></div>
-      <p className="Text">Notflicks</p>
+      <div className="Footer__Break"></div>
+      <p className="Footer__Text">Notflicks</p>
     </div>
   );
 }
