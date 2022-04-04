@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import requests from "../../requests";
-import data from "../../Data/movies";
+import data from "../../data/movies";
 import "./Banner.css";
 
 function Banner() {
