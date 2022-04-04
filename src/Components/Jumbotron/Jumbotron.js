@@ -1,5 +1,5 @@
 import React from "react";
-import JumboData from "../../Data/jumbo.json";
+import JumboData from "../../data/jumbo.json";
 import "./Jumbotron.css";
 
 function Jumbotron() {
