@@ -130,11 +130,9 @@
 }
 
 .Header__Picture {
-  /* background: url(${({ src }) => src}); */
-  background-size: contain;
   border: 0;
-  width: 32px;
-  height: 32px;
+  width: 50px;
+  height: 50px;
   cursor: pointer;
 }
 
@@ -147,25 +145,6 @@
   top: 32px;
   right: 10px;
 }
-
-/* ${Group}:last-of-type ${Link} {
-    cursor: pointer;
-  }
-
-  ${Group} {
-    margin-bottom: 10px;
-
-    &:last-of-type {
-      margin-bottom: 0;
-    }
-
-    ${Link} {
-      cursor: pointer;
-    }
-
-    ${Picture} {
-      cursor: default;
-    } */
 
 .Header__Dropdown button {
   margin-right: 10px;
@@ -187,13 +166,19 @@
   cursor: pointer;
 }
 
+.Header__Profile:hover .Header__Dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
 /* .Header__Profile:hover > ${Dropdown} {
     display: flex;
     flex-direction: column;
   } */
 
 .Header__Feature {
-  padding: 150px 0 500px 0;
+  /* padding: 150px 0 500px 0; */
+  padding: 100px;
   flex-direction: column;
   align-items: normal;
   width: 50%;
@@ -205,6 +190,7 @@
 }
 
 .Header__FeatureCallOut {
+  padding: 10px;
   color: white;
   font-size: 50px;
   line-height: normal;
@@ -214,6 +200,7 @@
 }
 
 .Header__Text {
+  padding: 15px;
   color: white;
   font-size: 22px;
   line-height: normal;
@@ -246,6 +233,7 @@
   font-weight: bold;
   font-size: 20px;
   margin-top: 10px;
+  margin-left: 15px;
   cursor: pointer;
   transition: background-color 0.5s ease;
 }
