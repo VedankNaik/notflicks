@@ -7,7 +7,7 @@ import "./Forms.css";
 
 function Signup() {
   const navigate = useNavigate();
-  const { firebase, auth } = useContext(FirebaseContext);
+  const { auth } = useContext(FirebaseContext);
   const [firstName, setFirstName] = useState("");
   const [emailAddress, setEmailAddress] = useState("");
   const [password, setPassword] = useState("");

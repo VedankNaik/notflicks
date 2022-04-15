@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./Row.css";
-import data from "../../data/movies";
 import YouTube from "react-youtube";
 import movieTrailer from "movie-trailer";
 
@@ -9,14 +8,14 @@ function Row({ title, url }) {
   const [movies, setMovies] = useState([]);
   const [trailerUrl, setTrailerUrl] = useState("");
 
-  // useEffect(() => {
-  //   async function fetchData() {
-  //     const request = await axios.get(url);
-  //     setMovies(request.data.items);
-  //     return request;
-  //   }
-  //   fetchData();
-  // }, [url]);
+  useEffect(() => {
+    async function fetchData() {
+      const request = await axios.get(url);
+      setMovies(request.data.items);
+      return request;
+    }
+    fetchData();
+  }, [url]);
 
   const opts = {
     height: "500",
@@ -45,7 +44,7 @@ function Row({ title, url }) {
     <div className="row">
       <h2>{title}</h2>
       <div className="row__posters">
-        {data.items.map((movie) => (
+        {movies.map((movie) => (
           <img
             key={movie.id}
             onClick={() => handleClick(movie)}

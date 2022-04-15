@@ -2,12 +2,12 @@ import React, { useState, useContext } from "react";
 import { Link as ReachRouterLink, useNavigate } from "react-router-dom";
 import { FirebaseContext } from "../../context/firebase";
 import * as ROUTES from "../../constants/routes";
-import { signInWithEmailAndPassword  } from "firebase/auth";
+import { signInWithEmailAndPassword } from "firebase/auth";
 import "./Forms.css";
 
 function Signin() {
   const navigate = useNavigate();
-  const { firebase, auth } = useContext(FirebaseContext);
+  const {auth } = useContext(FirebaseContext);
   const [emailAddress, setEmailAddress] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -15,8 +15,9 @@ function Signin() {
   const isInvalid = password === "" || emailAddress === "";
 
   const handleSignin = (event) => {
+
     event.preventDefault();
-    return signInWithEmailAndPassword (auth, emailAddress, password)
+    return signInWithEmailAndPassword(auth, emailAddress, password)
       .then(() => {
         navigate(ROUTES.BROWSE);
       })
